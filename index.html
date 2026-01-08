@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Advanced Image Gallery</h1>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+</header>
+
+<!-- Search Bar -->
+<input type="text" id="searchInput" placeholder="Search images...">
+
+<!-- Filter Buttons -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+    <img src="./images/nature1.webp" data-category="nature" alt="nature">
+    <img src="./images/nature2.webp" data-category="nature" alt="nature">
+    <img src="./images/city 1.webp" data-category="city" alt="city">
+    <img src="./images/city 2.webp" data-category="city" alt="city">
+    <img src="./images/animal1.webp" data-category="animals" alt="animals">
+    <img src="./images/animal2.webp" data-category="animals" alt="animals">
+    <img src="./images/nature1.webp" data-category="nature" alt="nature">
+    <img src="./images/nature2.webp" data-category="nature" alt="nature">
+    <img src="./images/city 1.webp" data-category="city" alt="city">
+    <img src="./images/city 2.webp" data-category="city" alt="city">
+    <img src="./images/OIP (1).webp" data-category="animals" alt="animals">
+    <img src="./images/OIP (3).webp" data-category="animals" alt="animals"> 
+    <img src="./images/OIP (4).webp" data-category="animals" alt="animals"> 
+    <img src="./images/OIP (5).webp" data-category="animals" alt="animals"> 
+    <img src="./images/OIP.webp" data-category="animals" alt="animals"> 
+    <img src="./images/th.webp" data-category="animals" alt="animals"> 
+  
+</div>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <span class="close">&times;</span>
+    <img id="popupImg">
+</div>
+<!-- Image Popup -->
+<div id="popup" class="popup" onclick="closePopup()">
+  <img id="popup-img">
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
